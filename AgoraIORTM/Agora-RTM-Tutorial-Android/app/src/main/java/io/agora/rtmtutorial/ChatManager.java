@@ -46,7 +46,7 @@ public class ChatManager {
                         // If currently there is no callback to handle this
                         // message, this message is unread yet. Here we also
                         // take it as an offline message.
-                        mMessagePool.insertOfflineMessage(rtmMessage, peerId);
+                        mMessagePool. insertOfflineMessage(rtmMessage, peerId);
                     } else {
                         for (RtmClientListener listener : mListenerList) {
                             listener.onMessageReceived(rtmMessage, peerId);
